@@ -1,0 +1,27 @@
+body{
+  background: #D0CCCB;
+  font-family: 'Dancing Script', cursive;
+  
+}
+
+h1{
+  border: black;
+  border-width: 1px;
+  border-style: solid;
+  text-align: center;
+}
+
+h2{
+color: purple
+}
+input{
+  border: 5px solid darkblue;
+}
+#textblock{
+  border: 5px solid gray;
+  width: 800px;
+  height: 400px
+}
+#link{
+  color: red;
+}
