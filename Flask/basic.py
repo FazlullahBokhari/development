@@ -14,5 +14,9 @@ def info():
 def puppy(name):
     return "<h1> This is a page for {} </h1>".format(name)
 
+@app.route('/<name>/<int:letter>')
+def letter(name,letter):
+    return "<h1>at index {}, {} letter is present. </h1>".format(letter,name[letter].upper())
+
 if __name__ == '__main__':
     app.run(debug=True)
