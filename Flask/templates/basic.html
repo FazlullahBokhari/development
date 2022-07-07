@@ -5,8 +5,25 @@
     <title>Flask app</title>
   </head>
   <body>
+    {% if login %}
+    <p>Welcom back, you are logged In </p>
+    {% else %}
+    <p>Please log in!</p>
+    {% endif %}
     <h1>Welcome to the site</h1>
     <h2>Laptop {{variable}} {{letters}}</h2>
     <img src="../static/laptop.avif" alt="">
+    <h1>{{a_list}}</h1>
+    <ul>
+      {% for item in a_list %}
+      <li>{{item}}</li>
+      {% endfor %}
+    </ul>
+
+    {% if 500 in a_list %}
+    <p>You won!</p>
+    {% else %}
+    <p>Please try again...</p>
+    {% endif %}
   </body>
 </html>
